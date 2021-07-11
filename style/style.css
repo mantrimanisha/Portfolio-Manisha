@@ -299,7 +299,7 @@ padding: 25px 20px 12px 20px;
 nav .link-wrap div:hover {
 color: #e31b6d;
 }
-nav .mdi-menu {
+nav .fa-bars {
 font-size: 30pt;
 line-height: 36pt;
 margin: auto 0;
@@ -1071,7 +1071,7 @@ padding: initial;
 nav .link-wrap div:first-child {
 padding: 0;
 }
-nav .mdi-menu {
+nav .fa-bars {
 display: none;
 }
 

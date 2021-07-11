@@ -102,7 +102,7 @@ $(function() {
       );
     });
   
-    $('.mdi-menu').click(function() {
+    $('.fa-bars').click(function() {
       $('.link-wrap').toggleClass('visible');
     });
   
