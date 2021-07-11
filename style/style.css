@@ -925,7 +925,7 @@ background: #1b242f;
 padding: 70px 0 50px 0;
 position: relative;
 }
-footer .mdi-chevron-double-up {
+footer .fa-chevron-circle-up {
 background: #e31b6d;
 cursor: pointer;
 font-size: 30pt;
@@ -939,7 +939,7 @@ top: -25px;
 transition: background 0.5s;
 width: 47px;
 }
-footer .mdi-chevron-double-up:hover {
+footer .fa-chevron-circle-up:hover {
 background: #fb1f79;
 }
 footer .icon-wrap .icon {
