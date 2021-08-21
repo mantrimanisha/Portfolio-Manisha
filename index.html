@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class=" -webkit-">
   <head>
@@ -14,11 +13,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      href="fonts/mdi/css/materialdesignicons.min.css"
-      media="all"
-      rel="stylesheet"
-    />
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     
     <!-- LOCAL -->
@@ -30,8 +25,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.css"></script> -->
 
     <!-- LOCAL -->
     <script src="scripts/pt.min.js"></script>
@@ -41,7 +34,36 @@
   <body>
     <div class="overflow-wrap">
       <!-- HOME -->
-
+<!-- Modal -->
+<div class="modal-wrap flex">
+  <div class="mask"></div>
+  <div class="modal" id="modal">
+    <div class="carousel-wrap">
+      <div class="window">
+        <div id="carousel">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </div>
+        <i class="fa fa-angle-left" aria-hidden="true" id="prev"></i>
+        <i class="fa fa-angle-right" aria-hidden="true" id="next"></i>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="title"></div>
+      <div class="tag"></div>
+      <div class="detail"></div>
+      <a href="#" target="_blank"
+        ><div class="button">
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+          VIEW SITE
+        </div>
+      </a>
+    </div>
+    <i class="close fa fa-times"></i>
+  </div>
+</div>
+<!-- HOMEE -->
       <section id="home" class="flex height-fix">
         <div id="pt" class="canvas"></div>
         <div class="flex">
@@ -53,7 +75,6 @@
 
           <div class="button page-link" dest="about">
             View my work
-             <!-- <i class="mdi mdi-arrow-right"></i> -->
              <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </div>
 
@@ -65,7 +86,6 @@
               <div class="page-link" dest="blog">Blog</div>
               <div class="page-link" dest="contact">Contact</div>
             </div>
-            <!-- <i class="mdi mdi-menu"></i> -->
             <i class="fa fa-bars" aria-hidden="true"></i>  
             
           </nav>
@@ -89,7 +109,6 @@
               <div class="flex bullet-wrap ">
                 <div class="hex-wrap waypoint" data-animation="flip-in-x">
                   <div class="hexagon">
-                    <!-- <i class="mdi mdi-speedometer"></i> -->
                     <i class="fa fa-tachometer" aria-hidden="true"></i>  
                     
                   </div>
@@ -110,7 +129,6 @@
                   data-delay=".2s"
                 >
                   <div class="hexagon">
-                    <!-- <i class="mdi mdi-cellphone-link"></i> -->
                     <i class="fa fa-mobile-phone" aria-hidden="true"></i>  
                   </div>
                 </div>
@@ -128,7 +146,6 @@
                   data-delay=".4s"
                 >
                   <div class="hexagon">
-                    <!-- <i class="mdi mdi-lightbulb-outline"></i> -->
                     <i class="fa fa-lightbulb-o" aria-hidden="true"></i>  
                   </div>
                 </div>
@@ -145,7 +162,6 @@
                   data-delay=".6s"
                 >
                   <div class="hexagon">
-                    <!-- <i class="mdi mdi-rocket"></i> -->
                     <i class="fa fa-rocket" aria-hidden="true"></i>  
                   </div>
                 </div>
@@ -176,8 +192,6 @@
                 ></a
               >
               <br />
-              <!-- I am a computer science student and want to become a full stack developer,
-              I am from Rajasthan. I am hard working and passionate towards my work. -->
               I have serious passion for UI effects, animations and creating
               intuitive, dynamic user experiences.
               I am hard working and passionate towards my work.
@@ -270,7 +284,7 @@
                 <div class="bold">To Do App</div>
                 <span class="highlight">React JS </span>
               </div>
-              <div class="button" id="ordering">LEARN MORE</div>
+              <div class="button" id="todoapp">LEARN MORE</div>
             </div>
           </div>
 
@@ -279,9 +293,9 @@
               <div class="card"></div>
               <div class="text">
                 <div class="bold">Expense Tracker</div>
-                <span class="highlight">React JS </span>
+                <span class="highlight">Vanilla JavaScript </span>
               </div>
-              <div class="button" id="discover">LEARN MORE</div>
+              <div class="button" id="expensetracker">LEARN MORE</div>
             </div>
           </div>
 
@@ -289,10 +303,10 @@
             <div>
               <div class="card"></div>
               <div class="text">
-                <div class="bold">Ecommerce Site</div>
+                <div class="bold">Burger Bar</div>
                 <span class="highlight">React, Redux</span>
               </div>
-              <div class="button" id="newrelic">LEARN MORE</div>
+              <div class="button" id="burgerbar">LEARN MORE</div>
             </div>
           </div>
 
@@ -303,7 +317,7 @@
                 <div class="bold">Weather Forecast</div>
                 <span class="highlight">JavaScript</span>
               </div>
-              <div class="button" id="roambi">LEARN MORE</div>
+              <div class="button" id="weatherforecast">LEARN MORE</div>
             </div>
           </div>
 
@@ -314,7 +328,7 @@
                 <div class="bold">Rock Paper Scissor</div>
                 <span class="highlight">JavaScript</span>
               </div>
-              <div class="button" id="mystand">LEARN MORE</div>
+              <div class="button" id="rockpaperscissor">LEARN MORE</div>
             </div>
           </div>
         </div>
@@ -476,7 +490,7 @@
               <div>
                 Your message was sent successfully. Thanks!<span
                   id="close"
-                  class="mdi mdi-close"
+                 class="fa fa-times"
                 ></span>
               </div>
             </div>
@@ -486,39 +500,27 @@
       </section>
 
       <footer>
-        <!-- <i class="mdi mdi-chevron-double-up page-link" dest="home"></i> -->
         <i class="fa fa-chevron-circle-up page-link" aria-hidden="true" dest="home"></i>  
-        <!-- <i class="fa fa-arrow-up page-link" aria-hidden="true" dest="home"></i>   -->
-        <!-- <i class="fas fa-angle-double-up" dest="home"></i> -->
         <div class="icon-wrap flex row">
             <a href="https://www.linkedin.com/in/manisha-mantri-60b449194/">
               <div class="flex icon" id="icon-2">
-                <!-- <i class="mdi mdi-linkedin"></i> -->
                 <i class="fa fa-linkedin" aria-hidden="true"></i>  
               </div>
               Linkedin
             </a>
             <a href="https://github.com/Manisha12-96">
               <div class="flex icon" id="icon-1">
-                <!-- <i class="mdi mdi-github"></i> -->
                 <i class="fa fa-github" aria-hidden="true"></i>  
             </div>
               Github
             </a>
             <a href="https://stackoverflow.com/users/15646263/manisha-mantri/">
               <div class="flex icon" id="icon-4">
-                <!-- <i class="mdi mdi-stackoverflow"></i> -->
                 <i class="fa fa-stack-overflow" aria-hidden="true"></i>  
               </div>
               StackOverflow
             </a>
-            <!-- <a href="https://codesandbox.io/dashboard/home?workspace=fe77121b-6eac-4971-8aee-a9e08e45873c">
-              <div class="flex icon" id="icon-5">
-            
-                 <i style="padding-left: 20px;" class="fa fa-CodeSandbox" aria-hidden="true"></i> 
-              </div>
-              CodeSandbox
-            </a>-->
+          
           </div> 
         <div class="info-box">
           <div class="footnote">
@@ -542,33 +544,23 @@
       <img src="img/blog-2.jpg" />
       <img src="img/blog-3.jpg" />
       <img src="img/blog-4.jpg" />
-      <img src="img/slides/discover-0.jpg" />
-      <img src="img/slides/discover-1.jpg" />
-      <img src="img/slides/discover-2.jpg" />
-      <img src="img/slides/ordering-0.jpg" />
-      <img src="img/slides/ordering-1.jpg" />
-      <img src="img/slides/ordering-2.jpg" />
-      <img src="img/slides/newrelic-0.jpg" />
-      <img src="img/slides/newrelic-1.jpg" />
-      <img src="img/slides/newrelic-2.jpg" />
-      <img src="img/slides/mystand-0.jpg" />
-      <img src="img/slides/mystand-1.jpg" />
-      <img src="img/slides/mystand-2.jpg" />
-      <!-- <img src="img/slides/never-0.jpg" />
-      <img src="img/slides/never-1.jpg" />
-      <img src="img/slides/never-2.jpg" /> -->
-      <!-- <img src="img/slides/powur-0.jpg" />
-      <img src="img/slides/powur-1.jpg" />
-      <img src="img/slides/powur-2.jpg" /> -->
-      <img src="img/slides/roambi-0.jpg" />
-      <img src="img/slides/roambi-1.jpg" />
-      <img src="img/slides/roambi-2.jpg" />
-      <!-- <img src="img/slides/themall-0.jpg" />
-      <img src="img/slides/themall-1.jpg" />
-      <img src="img/slides/themall-2.jpg" /> -->
-      <img src="img/slides/walker-0.jpg" />
-      <img src="img/slides/walker-1.jpg" />
-      <img src="img/slides/walker-2.jpg" />
+      <img src="img/slides/ToDoApp-React-0.jpg" />
+      <img src="img/slides/ToDoApp-React-1.jpg" />
+      <img src="img/slides/ToDoApp-React-2.jpg" />
+      <img src="img/slides/Expense-Tracker-Javascript-0.jpg" />
+      <img src="img/slides/Expense-Tracker-Javascript-1.jpg" />
+      <img src="img/slides/Expense-Tracker-Javascript-2.jpg" />
+      <img src="img/slides/Burger-Bar-Top-React-0.jpg" />
+      <img src="img/slides/Burger-Bar-Top-React-1.jpg" />
+      <img src="img/slides/Burger-Bar-Top-React-2.jpg" />
+      <img src="img/slides/Weather-app-react-0.jpg" />
+      <img src="img/slides/Weather-app-react-1.jpg" />
+      <img src="img/slides/Weather-app-react-2.jpg" />
+    
+      <img src="img/slides/Rock-Paper-Scissor-Javascript-0.jpg" />
+      <img src="img/slides/Rock-Paper-Scissor-Javascript-1.jpg" />
+      <img src="img/slides/Rock-Paper-Scissor-Javascript-2.jpg" />
+
     </div>
   </body>
 </html>
